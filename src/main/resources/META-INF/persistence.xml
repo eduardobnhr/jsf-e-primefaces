@@ -6,7 +6,7 @@
 >
 	<persistence-unit name="AlgaWorksPU">
 		<properties>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cursojsfprimefaces?useSSL=true" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cursojsfprimefaces?useSSL=false" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="gracom3502" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
@@ -15,8 +15,11 @@
       		<property name="javax.persistence.schema-generation.create-source" value="metadata" />
       		<property name="javax.persistence.sql-load-script-source" value="META-INF/sql/dados-iniciais.sql"/>
       		
+      		
+      		
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.version" value="5.2.3.Final" />
 		</properties>
 	</persistence-unit>
 </persistence>
