@@ -43,6 +43,7 @@ public class GestaoEmpresasBean implements Serializable {
             messages.info("Sua consulta não retornou registros.");
         }
     }
+    //get
     
     public void todasEmpresas() {
         listaEmpresas = empresas.todas();
