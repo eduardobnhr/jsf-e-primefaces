@@ -80,6 +80,8 @@
 			modal="true" resizable="false" closeOnEscape="true">
 			<p:messages id="empresaMessages" />
 			
+			<p:defaultCommand target="salvarCommandoButton" scope="empresaDialog"/>
+			
 			<h:panelGrid id="empresaPanelGrid" columns="2"
 				rendered="#{gestaoEmpresasBean.empresa ne null}">
 				<p:outputLabel value="Razão social: " for="razaoSocial" />
@@ -115,7 +117,7 @@
 					itemLabel="#{ramoAtividade.descricao}" itemValue="#{ramoAtividade}"/>
 				
 				<h:outputLabel />
-				<p:commandButton value="Salvar" actionListener="#{gestaoEmpresasBean.salvar}"
+				<p:commandButton id="salvarCommandoButton"  value="Salvar" actionListener="#{gestaoEmpresasBean.salvar}"
 					update="empresaPanelGrid empresaMessages"
 					oncomplete="if (!args.validationFailed) PF('empresaDialogWidgetVar').hide()" process="empresaDialog"/>
 			</h:panelGrid>
