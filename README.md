@@ -1,5 +1,5 @@
+#Cadastro de Empresas
 
-Cadastro de Empresas
 Este projeto consiste em um sistema web para o cadastro e gestão de informações relacionadas a empresas. Desenvolvido utilizando JavaServer Faces (JSF) e PrimeFaces, o sistema oferece uma interface intuitiva para realizar operações como adição, edição, exclusão e pesquisa de empresas.
 
 Funcionalidades Principais
